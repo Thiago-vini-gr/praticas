@@ -9,6 +9,7 @@ body{
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
+    display: auto;
     
 }
 header{
@@ -29,9 +30,10 @@ section{
     border-left: rgb(0, 38, 71) solid 10px;
     margin: 20px auto;
     width: 1500px;
-    height: 100px;
+    height: 150px;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-block-end: auto; 
     
 }
 section:hover{
@@ -46,6 +48,7 @@ footer{
     text-align: center;
     width: auto;
     height: auto;
+    margin-top: auto;
 }
 .p{
     color: white;
@@ -64,4 +67,14 @@ section p {
     margin-right: 20px; /* Margem direita */
     margin-left: 0; /* Alinhando à esquerda */
     position: relative;
+}
+.quadrado{
+    width: 80vw; /* Definindo uma largura grande, usando a unidade vw */
+    height: 80vh; /* Definindo uma altura grande, usando a unidade vh */
+    background-color: rgb(112, 138, 196);
+    margin: 50px auto; /* Centralizando o quadrado */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Organizando o conteúdo em colunas (cabeçalho, seção, rodapé) */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adicionando sombra ao redor do quadrado */
 }
