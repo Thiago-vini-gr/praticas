@@ -1,0 +1,77 @@
+/* Definindo o estilo para o corpo da página */
+body {
+    background-color: #000000; /* Cor de fundo da página (cinza claro) */
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDl5dHl0NGZ0dnhlc3hxdTNhYm1kd3duNzEzbTlvZ3puNnBvMGZ5aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KbN3zrHlRB9xJi3RQ6/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    font-family: Arial, sans-serif; /* Definindo a fonte padrão como Arial */
+    margin: 0; /* Removendo as margens padrão */
+    padding: 0; /* Removendo o preenchimento padrão */
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    width: 100%;
+}
+ 
+/* Estilo para todos os títulos h1 */
+h1 {
+    color: #ffa600; /* Cor do texto (um cinza escuro) */
+    text-align: center; /* Alinha o texto do título no centro */
+    font-size: 2.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho padrão */
+    margin-top: 20px; /* Adiciona uma margem superior de 20px */
+}
+ 
+/* Estilo para parágrafos */
+p {
+    color: #b7c400; /* Cor do texto (cinza claro) */
+    font-size: 1em; /* Tamanho da fonte do parágrafo, igual ao tamanho padrão */
+    line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
+    margin: 20px; /* Adiciona uma margem de 20px em volta do parágrafo */
+}
+ 
+/* Estilo para links */
+a {
+    color: #0066cc; /* Cor do link (azul claro) */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+ 
+a:hover {
+    color: #ff6600; /* Altera a cor do link para laranja quando o mouse passa por cima */
+    text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+}
+ 
+/* Estilo para listas não ordenadas (ul) */
+ul {
+    list-style-type: square; /* Define o estilo da marcação como quadrado */
+    padding-left: 20px; /* Adiciona um preenchimento à esquerda da lista */
+}
+ 
+/* Estilo para itens da lista (li) */
+li {
+    color: #b8a500; /* Cor do texto dos itens da lista (cinza escuro) */
+    margin-bottom: 10px; /* Adiciona uma margem inferior entre os itens da lista */
+}
+h2{
+    color: #ffa600; /* Cor do texto (um cinza escuro) */
+    font-size: 1.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho padrão */
+    margin-top: 10px; /* Adiciona uma margem superior de 20px */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ou a altura desejada */
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%; /* Ajusta a largura da imagem para não ultrapassar o limite do container */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor da imagem */
+  }
+  
