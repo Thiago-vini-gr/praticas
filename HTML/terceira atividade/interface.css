@@ -1,38 +1,159 @@
 body {
-    background-color: rgb(0, 0, 0);
- 
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
 }
-.area{
+
+img{
+    border: black 5px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+header {
+    font-size: 30px;
+    background-color: rgb(218, 167, 3);
+    padding: 20px;
+    text-align: center;
+    border-bottom: black 5px solid;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgb(218, 167, 3);
+    padding: 20px;
+    text-align: center;
+    border-top: black 5px solid;
+    margin-top: auto;
+    width: 100%;
+}
+
+.area {
     gap: 50px;
 }
-    
 
-
-.botaosimples{
-        appearance: none; /* Remove estilos nativos */
-        border: none;
-        background: none;
-        font-family: inherit;
-        color: inherit;
-        color: rgb(0, 0, 0); /* Cor do texto */
-        background-color: #fdfdfd; /* Cor de fundo */
-        border: none; /* Remove a borda padrão */
-        cursor: pointer; /* Muda o cursor ao passar por cima */
-        transition: background-color 0.3s; /* Transição suave na cor */
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 45px;
-        gap: 50px;
-
+.botao-ref {
+    background-image: url('https://vpjalimentos.com.br/wp-content/webp-express/webp-images/uploads/2022/08/Strogonoff-de-file%CC%81-mignon-Angus.jpg.webp');
+    /* caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-      
-.botao-simples:hover{
-        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+
+.botao-ref:hover {
+    opacity: 0.8;
+    /* efeito ao passar o mouse */
+}
+
+.botao-sobre {
+    background-image: url('https://i.pinimg.com/564x/52/9a/71/529a71b98d2440539ce1e721f5f8d341.jpg');
+    /* caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-sobre:hover {
+    opacity: 0.8;
+    /* efeito ao passar o mouse */
+}
+
+.botao-lanche {
+    background-image: url('https://amopaocaseiro.com.br/wp-content/uploads/2022/08/yt-069_pao-de-queijo_receita.jpg');
+    /* caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-lanche:hover {
+    opacity: 0.8;
+    /* efeito ao passar o mouse */
 }
 
 .text {
-    color: white; 
+    color: white;
 
 }
 
-    
+button {
+    color: black;
+}
+
+ol {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+section {
+    background-color: rgb(218, 167, 3);
+    width: auto;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-left: black 10px solid;
+}
