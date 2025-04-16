@@ -1,77 +1,117 @@
-/* Definindo o estilo para o corpo da página */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
 body {
-    background-color: #000000; /* Cor de fundo da página (cinza claro) */
-    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDl5dHl0NGZ0dnhlc3hxdTNhYm1kd3duNzEzbTlvZ3puNnBvMGZ5aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KbN3zrHlRB9xJi3RQ6/giphy.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; /* Centraliza a imagem */
-    font-family: Arial, sans-serif; /* Definindo a fonte padrão como Arial */
-    margin: 0; /* Removendo as margens padrão */
-    padding: 0; /* Removendo o preenchimento padrão */
-    height: 100%; /* Garante que o body ocupe toda a altura da tela */
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  width: 100%;
+  overflow: hidden;
 }
- 
-/* Estilo para todos os títulos h1 */
-h1 {
-    color: #ffa600; /* Cor do texto (um cinza escuro) */
-    text-align: center; /* Alinha o texto do título no centro */
-    font-size: 2.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho padrão */
-    margin-top: 20px; /* Adiciona uma margem superior de 20px */
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- 
-/* Estilo para parágrafos */
-p {
-    color: #b7c400; /* Cor do texto (cinza claro) */
-    font-size: 1em; /* Tamanho da fonte do parágrafo, igual ao tamanho padrão */
-    line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
-    margin: 20px; /* Adiciona uma margem de 20px em volta do parágrafo */
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
 }
- 
-/* Estilo para links */
-a {
-    color: #0066cc; /* Cor do link (azul claro) */
-    text-decoration: none; /* Remove o sublinhado do link */
+.ring i:nth-child(1) {
+  border-radius: 70px;
 }
- 
-a:hover {
-    color: #ff6600; /* Altera a cor do link para laranja quando o mouse passa por cima */
-    text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+.ring i:nth-child(2) {
+  border-radius: 70px;
 }
- 
-/* Estilo para listas não ordenadas (ul) */
-ul {
-    list-style-type: square; /* Define o estilo da marcação como quadrado */
-    padding-left: 20px; /* Adiciona um preenchimento à esquerda da lista */
+.ring i:nth-child(3) {
+  border-radius: 70px;
 }
- 
-/* Estilo para itens da lista (li) */
-li {
-    color: #b8a500; /* Cor do texto dos itens da lista (cinza escuro) */
-    margin-bottom: 10px; /* Adiciona uma margem inferior entre os itens da lista */
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
 }
-h2{
-    color: #ffa600; /* Cor do texto (um cinza escuro) */
-    font-size: 1.5em; /* Define o tamanho da fonte como 2.5 vezes o tamanho padrão */
-    margin-top: 10px; /* Adiciona uma margem superior de 20px */
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Ou a altura desejada */
-    text-align: center;
+@keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-  
-  img {
-    max-width: 100%; /* Ajusta a largura da imagem para não ultrapassar o limite do container */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  img:hover {
-    transform: scale(1.2); /* Aumenta a imagem em 20% */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao redor da imagem */
-  }
-  
+  @keyframes animate2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h2 {
+  font-size: 2em;
+  color: #000000;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #000000;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+.login .inputBx input::placeholder {
+  color: rgba(0, 0, 0, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #000000;
+  text-decoration: none;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
