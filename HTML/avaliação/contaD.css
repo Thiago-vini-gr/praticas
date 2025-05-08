@@ -1,0 +1,214 @@
+body {
+    background-image: url('img/belo-arranha-ceu-com-arquitetura-e-construcao-em-torno-da-cidade.jpg'); /* Caminho correto para a imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área do fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da janela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+header {
+    background-color: rgba(3, 21, 184, 0.8); /* Fundo preto com opacidade */
+    color: white;
+    padding: 20px 0;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente a logo e o menu */
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 20px; /* Adiciona espaço entre a logo e o menu */
+}
+
+.logo {
+    display: flex; /* Garante que a logo seja tratada como um item flexível */
+    align-items: center; /* Centraliza verticalmente a imagem */
+}
+
+.logo img {
+    max-width: 100px; /* Define um tamanho máximo para a logo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 0px;
+}
+.menu {
+    display: flex; /* Alinha os itens do menu horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Adiciona espaço entre os itens do menu */
+}
+
+/* Estilo para os itens do menu */
+.menu li {
+    margin: 0; /* Remove margens extras */
+}
+
+/* Estilo para os links do menu */
+.menulink {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    padding: 5px 10px; /* Adiciona espaçamento interno */
+    transition: background-color 0.3s ease; /* Suaviza o efeito hover */
+}
+.menulink:hover {
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    color: #0025cc; /* Cor do texto ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+img {
+    display: flexbox; /* Remove o comportamento inline da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0; /* Remove margens extras */
+    padding: 0; /* Remove paddings extras */
+    text-align: center;
+    justify-content: space-around;
+}
+a img {
+    display: center;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    display: block; /* Remove o comportamento inline da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+footer {
+    background-color: rgba(3, 21, 184, 0.8); /* Fundo preto com opacidade */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Adiciona espaçamento interno */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Permite o posicionamento absoluto dos links */
+    bottom: 0; /* Posiciona o footer na parte inferior */
+    margin-top: auto; /* Faz o footer ficar na parte inferior da página */
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+footer-links {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os links */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+.social-media{
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza os links */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 10px 3; /* Remove o padding padrão */
+    margin: 10px 0; /* Remove a margem padrão */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.cadastro-box {
+    width: 100%;
+    max-width: 400px; /* Define a largura máxima da box */
+    margin: 50px auto; /* Centraliza a box horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a box */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cadastro-box h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #0315b8; /* Cor do título */
+}
+
+.cadastro-box label {
+    display: block; /* Cada label ocupa uma linha */
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #333; /* Cor do texto */
+}
+
+.cadastro-box input {
+    width: 100%; /* Faz o input ocupar toda a largura */
+    padding: 10px; /* Adiciona espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
+
+.cadastro-box button {
+    width: 100%; /* Faz o botão ocupar toda a largura */
+    padding: 10px; /* Adiciona espaçamento interno */
+    background-color: #0315b8; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.cadastro-box button:hover {
+    background-color: #021090; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organiza logo e menu em coluna */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .logo img {
+        max-width: 80px; /* Reduz o tamanho da logo */
+    }
+
+    .menu {
+        flex-direction: column; /* Organiza os itens do menu em coluna */
+        gap: 10px; /* Espaçamento entre os itens do menu */
+    }
+
+    .menulink {
+        padding: 10px; /* Aumenta o espaçamento interno dos links */
+        text-align: center; /* Centraliza o texto dos links */
+    }
+
+    .cadastro-box {
+        width: 90%; /* Faz a box ocupar quase toda a largura */
+        margin: 20px auto; /* Centraliza a box horizontalmente */
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+
+    footer {
+        padding: 10px; /* Reduz o espaçamento interno do footer */
+        font-size: 14px; /* Reduz o tamanho da fonte no footer */
+    }
+}
+
+/* Estilo para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Adiciona espaçamento interno ao body */
+    }
+
+    .logo img {
+        max-width: 60px; /* Reduz ainda mais o tamanho da logo */
+    }
+
+    .menu {
+        gap: 5px; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    .cadastro-box {
+        padding: 10px; /* Ajusta o espaçamento interno */
+    }
+
+    footer {
+        font-size: 12px; /* Reduz ainda mais o tamanho da fonte no footer */
+    }
+}
