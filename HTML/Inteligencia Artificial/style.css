@@ -3,9 +3,12 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('img/mundo.avif'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área do fundo */
+    display: flexbox;
 }
 header{
-    background-color: black;
+    background-color: black (5, 5, 5, 0.8);
     color: white;
     text-align: center;
     padding: 5px;
@@ -42,10 +45,11 @@ a{
     color: black;
     width: 500px;
     margin: 0 auto;
-
+    height: auto;
+    display: flexbox;
 }
 footer{
-    background-color: black;
+    background-color: black(5, 5, 5, 1.8);
     color: white;
     text-align: center;
     padding: 10px;
@@ -57,11 +61,56 @@ p{
 }
 img{
     justify-content: center;
-    display: block;
+    display: flexbox;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
 }
 .menulink:hover{
     background-color: rgb(255, 255, 255);
-    color: black;
+    color: rgb(5, 5, 5, 0.8);
     border-radius: 5px;
     padding: 5px;
+}
+
+/* Estilo padrão para telas maiores */
+.box {
+    width: 50%; /* Define a largura do box */
+    margin: 50px auto; /* Centraliza o box horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+    border: 1px solid #ccc; /* Borda ao redor do box */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o box */
+    text-align: center; /* Centraliza o texto dentro do box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito de zoom */
+}
+
+/* Efeito de zoom ao passar o mouse */
+.box:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do box em 10% */
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Ajuste para tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .box {
+        width: 70%; /* Reduz a largura do box para tablets */
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+    img {
+        max-width: 90%; /* Reduz a largura da imagem para tablets */
+    }
+}
+
+/* Ajuste para celulares (largura máxima de 480px) */
+@media (max-width: 480px) {
+    .box {
+        width: 90%; /* Reduz a largura do box para ocupar quase toda a tela */
+        padding: 10px; /* Ajusta o espaçamento interno */
+    }
+    img {
+        max-width: 100%; /* Faz a imagem ocupar toda a largura da tela em celulares */
+    }
 }
